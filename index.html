@@ -7,10 +7,13 @@
     <title>eCommerce</title>
 </head>
 <body>
+
     <!-- Titulo de la pagina-->
     <header>
-        <img>
-        <h1>Pagina de prueba</h1>
+        <a href="index.html" title="Pagina principal">
+            <img src="\img\games.png" alt="imagen de cafe" width="200" height="200"/>
+        </a>
+        <h1>GamerGeeks</h1>
         <!--Barra de navegacion-->
         <center>
         <nav>
@@ -22,16 +25,62 @@
         </nav>
         </center>
     </header>
+
     <!--Formulario o interior de la pagina-->
     <main>
+        <h2>Pagina Principal</h2>
+        Pagina de gamergeeks como prueba para el ciclo 3.
+        
+        <center>
+        <h3>Formulario para recibir informacion</h3>
+        <form>
+            los campos con * son obligatorios.<br/><br/>
+            <label for="nombre">Nombre*:</label>
+            <input type="text" id="nombre" name="txtnombre" placeholder="Ingrese nombre" maxlength="15" required><br/><br/>
+            
+            <label for="edad">Fecha de nacimiento:</label>
+            <input type="date" id="edad" name="txtfecha"><br/><br/>
+            
+            <label for="genero">Sexo:</label>
+            <input type="radio" value=1 name="sexo" id="genero">Hombre
+            <input type="radio" value=0 name="sexo" id="genero">Mujer <br/><br/>
+            
+            <label for="documento">Seleccionar tipo de documento</label>
+            <select name="tipoDocumento">
+                <option value="" selected>-- Selecciona documento --</option>
+                <option value="cc">Cedula de ciudadania</option>
+                <option value="ti">Tarjeta de identidad</option>
+                <option value="ce">Cedula de extrangeria</option>
+            </select><br/><br/>
+            
+            <label for="telefono">Telefono:*</label>
+            <input type="number" id="telefono" name="txttelefono" size="30" min=99999 max=9999999999 required><br/><br/>
+            
+            <label for="correo">Correo electronico:*</label>
+            <input type="email" id="correo" name="txtemail" required><br/><br/>
+            
+            <label for="gustos">Selecciona tus gustos</label><br/>
+            <input type="checkbox" id=gustos name="chGustos" value="musica">Musica
+            <input type="checkbox" id=gustos name="chGustos" value="juegos">Juegos <br/>
+            <input type="checkbox" id=gustos name="chGustos" value="peliculas">Peliculas
+            <input type="checkbox" id=gustos name="chGustos" value="libros">Libros <br/><br/>
+
+            <label for="mensaje">Envianos informacion tuya</label><br/>
+            <textarea name="txtarea" rows=3 cols= 35></textarea><br/><br/>
+
+            <input type="submit" value="Grabar">&nbsp;&nbsp;&nbsp;
+            <input type="submit" value="Cancelar">
+        </form>
+        </center>
+        
         <ol>
             <h3>Pagina Principal</h3>
             <li><b>Opcion 1</b></li>
             <li><strong>Opcion 2</strong></li>
-            <li><img src="https://estaticos.muyinteresante.es/uploads/images/gallery/5548e20741444aef0ed38e65/cafe15.jpg" alt="imagen buscada"/></li>
-            <li><img src="\img\cafe.jpeg" alt="imagen buscada"/></li>
+            <li><img src="https://estaticos.muyinteresante.es/uploads/images/gallery/5548e20741444aef0ed38e65/cafe15.jpg" alt="imagen buscada" width="200" height="150"/></li>
         </ol>
     </main>
+    
     <!--Pie de pagina para todas las paginas-->
     <footer>Ensayo pagina web - ciclo 3</footer>
 </body>
