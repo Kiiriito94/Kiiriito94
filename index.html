@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eCommerce</title>
+    <link rel="stylesheet" href="\css\style.css">
 </head>
 <body>
-
+    
     <!-- Titulo de la pagina-->
     <header>
         <a href="index.html" title="Pagina principal">
-            <img src="\img\games.png" alt="imagen de cafe" width="200" height="200"/>
+            <img src="\img\games.png" alt="imagen de cafe" width="100" height="100"/>
         </a>
-        <h1>GamerGeeks</h1>
+        <h2>GamerGeeks</h2>
         <!--Barra de navegacion-->
         <center>
         <nav>
@@ -28,13 +29,10 @@
 
     <!--Formulario o interior de la pagina-->
     <main>
-        <h2>Pagina Principal</h2>
-        Pagina de gamergeeks como prueba para el ciclo 3.
-        
         <center>
         <h3>Formulario para recibir informacion</h3>
+        <!-- Formulario -->
         <form>
-            los campos con * son obligatorios.<br/><br/>
             <label for="nombre">Nombre*:</label>
             <input type="text" id="nombre" name="txtnombre" placeholder="Ingrese nombre" maxlength="15" required><br/><br/>
             
@@ -60,10 +58,10 @@
             <input type="email" id="correo" name="txtemail" required><br/><br/>
             
             <label for="gustos">Selecciona tus gustos</label><br/>
-            <input type="checkbox" id=gustos name="chGustos" value="musica">Musica
-            <input type="checkbox" id=gustos name="chGustos" value="juegos">Juegos <br/>
-            <input type="checkbox" id=gustos name="chGustos" value="peliculas">Peliculas
-            <input type="checkbox" id=gustos name="chGustos" value="libros">Libros <br/><br/>
+            <input type="checkbox" name="chGustos" value="musica">Musica
+            <input type="checkbox" name="chGustos" value="juegos">Juegos <br/>
+            <input type="checkbox" name="chGustos" value="peliculas">Peliculas
+            <input type="checkbox" name="chGustos" value="libros">Libros <br/><br/>
 
             <label for="mensaje">Envianos informacion tuya</label><br/>
             <textarea name="txtarea" rows=3 cols= 35></textarea><br/><br/>
@@ -72,16 +70,43 @@
             <input type="submit" value="Cancelar">
         </form>
         </center>
-        
+        <!-- Lista con numeros -->
         <ol>
             <h3>Pagina Principal</h3>
             <li><b>Opcion 1</b></li>
             <li><strong>Opcion 2</strong></li>
             <li><img src="https://estaticos.muyinteresante.es/uploads/images/gallery/5548e20741444aef0ed38e65/cafe15.jpg" alt="imagen buscada" width="200" height="150"/></li>
         </ol>
+        <!--Tabla-->
+        <center>
+            <h3>Listado productos</h3>
+            <table border=2>
+                <tr>
+                    <th>Codigo</th>
+                    <th>Descripcion</th>
+                    <th>Valor</th>
+                </tr>
+                <tr>
+                    <th>10</th>
+                    <td>Gafas</td>
+                    <td>$350.000</td>
+                </tr>
+                <tr>
+                    <th>250</th>
+                    <td>Zapato Nike</td>
+                    <td>$450.000</td>
+                </tr>
+                <tr>
+                    <th>850</th>
+                    <td>Arroz 3Kg</td>
+                    <td>$12.580</td>
+                </tr>
+            </table>
+        </center>
     </main>
     
     <!--Pie de pagina para todas las paginas-->
     <footer>Ensayo pagina web - ciclo 3</footer>
+    </div>
 </body>
 </html>
